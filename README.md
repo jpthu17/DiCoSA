@@ -212,30 +212,7 @@ main_retrieval.py \
 
 ###  Train on MSVD
 ```shell
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
-python -m torch.distributed.launch \
---master_port 2502 \
---nproc_per_node=8 \
-main_retrieval.py \
---do_train 1 \
---workers 8 \
---n_display 5 \
---epochs 5 \
---lr 1e-4 \
---coef_lr 1e-3 \
---batch_size 128 \
---batch_size_val 128 \
---anno_path ${Anno_PATH} \
---video_path ${DATA_PATH} \
---datatype msvd \
---max_words 32 \
---max_frames 12 \
---video_framerate 1 \
---output_dir ${OUTPUT_PATH} \
---center 8 \
---temp 3 \
---alpha 0.01 \
---beta 0.005
+TODO
 ```
 
 ###  Train on ActivityNet Captions
