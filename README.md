@@ -124,7 +124,7 @@ python preprocess/compress_video.py --input_root [raw_video_path] --output_root 
 This script will compress the video to *3fps* with width *224* (or height *224*). Modify the variables for your customization.
 
 
-### Test on MSR-VTT 1k
+### Test on MSR-VTT
 The checkpoint can be downloaded from [pytorch_model.bin.msrvtt](https://disk.pku.edu.cn:443/link/16E6BA590227B4580B99AC501C2586B1).
 ```shell
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
@@ -154,7 +154,7 @@ main_retrieval.py \
 --init_model pytorch_model.bin.msrvtt
 ```
 
-###  Train on MSR-VTT 1k
+###  Train on MSR-VTT
 ```shell
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 python -m torch.distributed.launch \
