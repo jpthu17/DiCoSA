@@ -210,11 +210,6 @@ main_retrieval.py \
 --beta 0.005
 ```
 
-###  Train on MSVD
-```shell
-TODO
-```
-
 ###  Train on ActivityNet Captions
 ```shell
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
