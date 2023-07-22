@@ -3,10 +3,10 @@
 # 【IJCAI'2023 🔥】Text-Video Retrieval with Disentangled Conceptualization and Set-to-Set Alignment
   
 [![Conference](http://img.shields.io/badge/IJCAI-2023-FFD93D.svg)](https://ijcai-23.org/)
-[![Paper](http://img.shields.io/badge/Paper-arxiv.todo-FF6B6B.svg)]()
+[![Paper](http://img.shields.io/badge/Paper-arxiv.2305.12218-FF6B6B.svg)](https://arxiv.org/abs/2305.12218)
 </div>
 
-The implementation of IJCAI 2023 paper [Text-Video Retrieval with Disentangled Conceptualization and Set-to-Set Alignment]().
+The implementation of IJCAI 2023 paper [Text-Video Retrieval with Disentangled Conceptualization and Set-to-Set Alignment](https://arxiv.org/abs/2305.12218).
 
 ## 📌 Citation
 If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
