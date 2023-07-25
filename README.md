@@ -41,8 +41,29 @@ For set-to-set alignment, where a set of visual concepts correspond to a set of 
 <img src="pictures/pic2.png" width="800px">
 </div>
 
-
 ## 🚀 Quick Start
+### Datasets
+<div align=center>
+
+|Datasets|Google Cloud|Baidu Yun|Peking University Yun|
+|:--------:|:--------------:|:-----------:|:-----------:|
+| MSR-VTT | [Download](https://drive.google.com/drive/folders/1LYVUCPRxpKMRjCSfB_Gz-ugQa88FqDu_?usp=sharing) | [Download](https://pan.baidu.com/s/1Gdf6ivybZkpua5z1HsCWRA?pwd=enav) | [Download](https://disk.pku.edu.cn:443/link/BE39AF93BE1882FF987BAC900202B266) |
+| MSVD | [Download](https://drive.google.com/drive/folders/18EXLWvCCQMRBd7-n6uznBUHdP4uC6Q15?usp=sharing) | [Download](https://pan.baidu.com/s/1hApFdxgV3TV2TCcnM_yBiA?pwd=kbfi) | [Download](https://disk.pku.edu.cn:443/link/CC02BD15907BFFF63E5AAE4BF353A202) |
+| ActivityNet | TODO | [Download](https://pan.baidu.com/s/1tI441VGvN3In7pcvss0grg?pwd=2ddy) | [Download](https://disk.pku.edu.cn:443/link/83351ABDAEA4A17A5A139B799BB524AC) |
+| DiDeMo | TODO | [Download](https://pan.baidu.com/s/1Tsy9nb1hWzeXaZ4xr7qoTg?pwd=c842) | [Download](https://disk.pku.edu.cn:443/link/BBF9F5990FC4D7FD5EA9777C32901E62) |
+
+</div>
+
+### Model Zoo
+<div align=center>
+
+|Checkpoint|Google Cloud|Baidu Yun|Peking University Yun|
+|:--------:|:--------------:|:-----------:|:-----------:|
+| MSR-VTT | [Download](https://drive.google.com/file/d/1rMLDHXZw-NgiXnzChkFUIX384crWOCcH/view?usp=drive_link) | [Download](https://pan.baidu.com/s/1CofOx3DLwgNtQcYKYFpf3g?pwd=m9pf) | [Download](https://disk.pku.edu.cn:443/link/16E6BA590227B4580B99AC501C2586B1) |
+| ActivityNet | [Download](https://drive.google.com/file/d/1NMnvJs9z0lSX-yFnl-TmbZndq5dO44sw/view?usp=drive_link) | [Download](https://pan.baidu.com/s/1BaAv89II7sIjqKIwBC8QIg?pwd=zu4b) | [Download](https://disk.pku.edu.cn:443/link/9C6D0FC9AEB64928B0F7B9E71B9DD41A) |
+
+</div>
+
 <details>
 <summary><b>Text-video Retrieval</b></summary>
 
@@ -61,60 +82,6 @@ cd tvr/models
 wget https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt
 # wget https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt
 # wget https://openaipublic.azureedge.net/clip/models/b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836/ViT-L-14.pt
-```
-
-
-### Download Datasets
-
-#### MSRVTT
-For MSRVTT, the official data and video links can be found in [link](http://ms-multimedia-challenge.com/2017/dataset).
-
-For the convenience, the splits and captions can be found in sharing from [CLIP4Clip](https://github.com/ArrowLuo/CLIP4Clip/),
-
-```shell
-wget https://github.com/ArrowLuo/CLIP4Clip/releases/download/v0.0/msrvtt_data.zip
-```
-
-Besides, the raw videos can be found in sharing from [Frozen in Time](https://github.com/m-bain/frozen-in-time), i.e.,
-
-```shell
-wget https://www.robots.ox.ac.uk/~maxbain/frozen-in-time/data/MSRVTT.zip
-```
-
-#### MSVD
-
-For MSDC, the official data and video links can be found in [link](https://www.cs.utexas.edu/users/ml/clamp/videoDescription/).
-
-For convenience, we share the processed dataset in [link](https://disk.pku.edu.cn:443/link/CC02BD15907BFFF63E5AAE4BF353A202).
-
-```shell
-https://disk.pku.edu.cn:443/link/CC02BD15907BFFF63E5AAE4BF353A202
-```
-
-#### LSMDC
-
-For LSMDC, the official data and video links can be found in [link](https://sites.google.com/site/describingmovies/).
-
-Due to license restrictions, we cannot share this dataset.
-
-#### ActivityNet Captions
-
-For ActivityNet Captions, the official data and video links can be found in [link](https://cs.stanford.edu/people/ranjaykrishna/densevid/).
-
-For convenience, we share the processed dataset in [link](https://disk.pku.edu.cn:443/link/83351ABDAEA4A17A5A139B799BB524AC).
-
-```shell
-https://disk.pku.edu.cn:443/link/83351ABDAEA4A17A5A139B799BB524AC
-```
-
-#### DiDeMo
-
-For DiDeMo, the official data and video links can be found in [link](https://github.com/lisaanne/localizingmoments).
-
-For convenience, we share the processed dataset in [link](https://disk.pku.edu.cn:443/link/BBF9F5990FC4D7FD5EA9777C32901E62).
-
-```shell
-https://disk.pku.edu.cn:443/link/BBF9F5990FC4D7FD5EA9777C32901E62
 ```
 
 ### Compress Video
@@ -235,7 +202,9 @@ main_retrieval.py \
 --center 8 \
 --temp 3 \
 --alpha 0.01 \
---beta 0.005
+--beta 0.005 \
+--t2v_beta 50 \
+--v2t_beta 50
 ```
 
 ###  Train on DiDeMo
