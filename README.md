@@ -64,8 +64,6 @@ For set-to-set alignment, where a set of visual concepts correspond to a set of 
 
 </div>
 
-<details>
-<summary><b>Text-video Retrieval</b></summary>
 
 ### Setup code environment
 ```shell
@@ -234,7 +232,6 @@ main_retrieval.py \
 --alpha 0.01 \
 --beta 0.005
 ```
-</details>
 
 ## 🎗️ Acknowledgments
 * This code implementation are adopted from [CLIP](https://github.com/openai/CLIP), [DRL](https://github.com/foolwood/DRL), and [EMCL](https://github.com/jpthu17/EMCL).
