@@ -11,13 +11,21 @@ The implementation of IJCAI 2023 paper [Text-Video Retrieval with Disentangled C
 ## 📌 Citation
 If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
 ```
-@inproceedings{
-jin2023text,
-title={Text-Video Retrieval with Disentangled Conceptualization and Set-to-Set Alignment},
-author={Peng Jin and Hao Li and Zesen Cheng and Jinfa Huang and Zhennan Wang and Li Yuan and Chang Liu and Jie Chen},
-booktitle={IJCAI},
-year={2023}
+@inproceedings{ijcai2023p0104,
+  title     = {Text-Video Retrieval with Disentangled Conceptualization and Set-to-Set Alignment},
+  author    = {Jin, Peng and Li, Hao and Cheng, Zesen and Huang, Jinfa and Wang, Zhennan and Yuan, Li and Liu, Chang and Chen, Jie},
+  booktitle = {Proceedings of the Thirty-Second International Joint Conference on
+               Artificial Intelligence, {IJCAI-23}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Edith Elkind},
+  pages     = {938--946},
+  year      = {2023},
+  month     = {8},
+  note      = {Main Track},
+  doi       = {10.24963/ijcai.2023/104},
+  url       = {https://doi.org/10.24963/ijcai.2023/104},
 }
+
 ```
 
 ## 📣 Updates
