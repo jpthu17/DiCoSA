@@ -45,7 +45,7 @@ If you find this paper useful, please consider staring 🌟 this repo and citing
 
 
 ## 📣 Updates
-* Apr 30 2023: Release code for reimplementing the experiments in the paper.
+* **[2023/04/30]**: Release code for reimplementing the experiments in the paper.
 
 ## 📕 Overview
 Text-video retrieval is a challenging cross-modal task, which aims to align visual entities with natural language descriptions.
